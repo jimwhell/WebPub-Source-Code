@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+
+* {
+    padding: 0; margin: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;  
+    flex-grow: 1;
+    overflow-y: hidden;
+
+}
+
+.body {
+  background-color:var(--pastel-purple);
+} 
+
+.body-admin {
+    background-color:var(--second-color);
+}
+:root {
+    --basic-font: 'Playpen Sans', sans-serif;
+    --first-color: #C593F6;
+    --dark-purple: #874ac4;
+    --darkest-purple: #2d0653;
+    --pastel-purple: #d3acfa;
+    --second-color: #BBDCE3;
+    --slightdark-blue:#a0c9d1;
+    --dark-blue: #008ca8;
+    --darkest-blue: #013d49;
+    --neutral-color: #FCFCF7;
+    --big-font: 'Rubik Bubbles', sans-serif;
+    --medium-font: 'Gluten', sans-serif;
+
+}
+/* -----contact forms-------------- */
+
+.form-parent, .form-parent-admin {
+    width: 50%;
+    height: auto;
+    margin-inline: auto;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    padding: 5%;
+    border-radius: 50px;
+   
+}
+
+.form-parent {
+    background-color: var(--second-color);
+    box-shadow: 10px 10px var(--dark-purple);
+}
+
+.form-parent-admin {
+    background-color: var(--first-color);
+    box-shadow: 10px 10px var(--dark-blue);
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom: 5%;
+}
+
+.form-header p {
+    font-size: clamp(0.7em, 1vw, 2em);
+    text-align: center;
+    font-family: var(--basic-font);
+    color: var(--darkest-purple)
+}
+
+p.admin-desc {
+    font-size: clamp(0.7em, 2vw, 2em);
+    text-align: center;
+    font-family: var(--basic-font);
+    color: var(--neutral-color);
+} 
+.login-signup-form::placeholder {
+    color: var(--darkest-blue);
+    opacity: 0.7;
+    font-size: clamp(0.7em, 0.8vw, 1em)
+}
+
+.col-md-12 input:focus {
+    outline: none;
+}
+
+.login-signup-form::-webkit-autofill {
+    background-color: transparent; 
+  }
+
+.col-md-12 .login-signup-form {
+    background-color: transparent;
+    border: 5px solid var(--neutral-color);
+    width: 100%;
+    border-radius: 50px;
+    padding: 3%;
+    font-family: var(--basic-font);
+    color: var(--darkest-purple);
+}
+
+.col-md-12 p {
+    color: var(--darkest-purple);
+    margin-left: 2%;
+    margin-top: 2%;
+    
+    font-size: clamp(0.7em, 1vw, 2em);
+}
+
+span {
+    font-weight: bold;
+    color: var(--dark-purple)
+}
+
+.col-md-12 a {
+    text-decoration: none;
+}
+
+span:hover {
+    color: var(--neutral-color);
+    transition: 0.3s;
+}
+
+.col-12 button{
+    width: clamp(100px,10vw, 500px);
+    height: clamp(40px, 3vh, 100px);
+    background-color: var(--neutral-color);
+    border-radius: 20px;
+    border: 5px solid var(--neutral-color);
+    padding: 1% 2% 4% 1%;
+    font-size:clamp(0.8em, 0.8vw, 2em);
+    font-family: var(--basic-font);
+    color: var(--darkest-purple);
+    margin-left: 2%;
+}
+
+.col-12 button:hover {
+    background-color: transparent;
+    color: var(--neutral-color);
+    transition: 0.3s;
+    
+}
